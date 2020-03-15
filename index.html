@@ -1,90 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-  <meta charset="utf-8">
-
-  <title>QIPAWORLD</title>
-
-  <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-  <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
-
-  <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="format-detection" content="telephone=no">
-
-  <!-- force webkit on 360 -->
-  <meta name="renderer" content="webkit"/>
-  <meta name="force-rendering" content="webkit"/>
-  <!-- force edge on IE -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <!-- force full screen on some browser -->
-  <meta name="full-screen" content="yes"/>
-  <meta name="x5-fullscreen" content="true"/>
-  <meta name="360-fullscreen" content="true"/>
-  
-  <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content=""/>
-  <meta name="x5-orientation" content="">
-
-  <!--fix fireball/issues/3568 -->
-  <!--<meta name="browsermode" content="application">-->
-  <meta name="x5-page-mode" content="app">
-
-  <!--<link rel="apple-touch-icon" href=".png" />-->
-  <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
-
-  <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
-  <link rel="icon" href="favicon.png"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QIPAWORLD</title>
+<style type="text/css">
+body {
+	margin-left: 1.5%;
+	margin-top: 1.5%;
+	margin-right: 1.5%;
+	margin-bottom: 1.5%;
+	background-color: #5C5C5C;
+	background-image: url(images/bg.jpg);
+	font-size: 33px;
+	color: #FFFFFF;
+/*	background-repeat: no-repeat;*/
+	background-attachment: fixed;
+}
+</style>
 </head>
+
 <body>
-  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-  <div id="splash">
-    <div class="progress-bar stripes">
-      <span style="width: 0%"></span>
-    </div>
+<!-- <div align="center"><img src="photo_t.jpg" style="max-width:100%;" />
+
+</div> -->
+<div>
+  <div align="center" >
+    <img src="images/logo.png" width="200" height="205" alt=""/>
+	<p>齊葩世界 | QIPAWORLD</p>
+<!--
+    
+    <br />
+    <br />
+-->
+    <a href="https://space.bilibili.com/320144047" style="font-size: 19px; color: #FFFFFF; font-style: normal; font-weight: normal;">《Bilibili》</a>  
+    <a href="https://weibo.com/3660328564" style="font-size:19px; color:#FFFFFF;">《微博》</a> 
+    <a href="https://github.com/qipaworld" style="font-size: 19px; color: #FFFFFF;">《GITHUB》</a>  
+    <a href="https://www.jianshu.com/u/1336dcbf21ce" style="font-size:19px; color:#FFFFFF;">《博客》</a>  
+    <br />
+    <p style="color:#FFF;">--------------------------------------------------------</p>
+    <p  style="font-size:19px;   color:#FFF;">邮箱: shengming.qi.cn@gmail.com | 综合QQ群：773737841 | 游戏开发QQ群: 346658039 | 文学作品QQ群: 825076617</p>
+    <p style="color:#FFF;">--------------------------------------------------------</p>
+    <p  style=" font-size:23px; color:#FFF;"> 小说 </p>
+    <p  style="font-size:19px; color:#FFF;">作品讨论QQ群: 825076617</p>
+    <p style="color:#FFF;">--------------------------------------------------------</p>
+	<p  style=" font-size:23px; color:#FFF;"> 游戏 </p>
+    <p  style="font-size:19px; color:#FFF;">作品讨论QQ群: 346658039</p>
+    <a href="http://qipa.world/PrivacyPolicy/PrivacyPolicy.html" style=" font-size:19px; color:#FFF;" align="left" >个人项目隐私权政策</a>
+<!--    <p style="color:#FFF;">-------------------------</p>-->
+	<p style="color:#FFF;">-------------------</p>
+	<p  style=" font-size:25px; color:#FFF;"> STEAM </p>
+    <p style="color:#FFF;">------------------------------------------</p>
+    <a href="https://store.steampowered.com/app/975710" style="font-size:19px; color:#FFF;">《Qipa World-Hello Big Adventure》</a>
+    <a href="https://store.steampowered.com/app/1153030" style="font-size:19px; color:#FFF;">《Jigsaw puzzle Evolution》</a>
+    <p style="color:#FFF;">------------------------------------------</p>
+    <p  style=" font-size:25px; color:#FFF;"> APP STORE </p>
+    <p style="color:#FFF;">------------------------------------------------------------------</p>
+    <a href="http://itunes.apple.com/cn/app/id967231968" style="font-size:19px; color:#FFF;">《Living Time》</a>
+    <a href="http://itunes.apple.com/cn/app/id1289628445" style="font-size:19px; color:#FFF;">《Qipa World-Hello Big Adventure》</a>
+    <a href="http://itunes.apple.com/cn/app/id1453661244" style="font-size:19px; color:#FFF;">《水压套圈游戏机》</a>
+    <a href="http://itunes.apple.com/cn/app/id1360613396" style="font-size:19px; color:#FFF;">《Jigsaw puzzle - Evolution》</a>
+    <br />
+    <a href="http://itunes.apple.com/cn/app/id1390316452" style="font-size:19px; color:#FFF;">《Mushroom Farm》</a>
+    <a href="http://itunes.apple.com/cn/app/id1436599130" style="font-size:19px; color:#FFF;">《Vent Sandbag - Relieve Stress》</a>
+    <a href="http://itunes.apple.com/cn/app/id963550049" style="font-size:19px; color:#FFF;">《Pure Milk》</a>
+    <!-- <a href="https://appsto.re/cn/DzK_5.i" style="font-size:19px; color:#FFF;">《Magic Plane》</a> -->
+    
+    <a href="http://itunes.apple.com/cn/app/id989464695" style="font-size:19px; color:#FFF;">《Diamond Explosion》</a>
+    <p style="color:#FFF;">------------------------------------------------------------------</p>
+    <p  style=" font-size:25px; color:#FFF;"> GOOGLE PLAY </p>
+    <p style="color:#FFF;">------------------------------------------------------------------</p>
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.mytime" style="font-size:19px; color:#FFF;">《Living Time》</a>
+    
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.qipaworld2" style="font-size:19px; color:#FFF;">《Qipa World-Hello Big Adventure》</a>
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.waterpressure" style="font-size:19px; color:#FFF;">《水压套圈游戏机》</a>
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.puzzle" style="font-size:19px; color:#FFF;">《Jigsaw puzzle - Evolution》</a>
+    <br />
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.farm" style="font-size:19px; color:#FFF;">《Mushroom Farm》</a>
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.relax" style="font-size:19px; color:#FFF;">《Vent Sandbag - Relieve Stress》</a>
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.puremilk" style= "font-size:19px; color:#FFF;">《Pure Milk》</a>
+    <!-- <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.magicplane" style="font-size:19px; color:#FFF;">《Magic Plane》</a> -->
+    
+    <a href="https://play.google.com/store/apps/details?id=com.qipaworld.game.diamond" style="font-size:19px; color:#FFF;">《Diamond Explosion》</a>
+    
+    
+    <!-- <p style="color:#FFF;">-------------------------------------------------</p>
+    <p  style=" font-size:23px; color:#FFF;"> 公司项目 </p>
+    <p  style=" font-size:18px; color:#FFF;"> 战略类 </p>
+    <p  style=" font-size:16px; color:#FFF;"> APP STORE </p>
+    <a href="https://appsto.re/cn/7DWadb.i" style="color:#FFF;">《Decisive Battle Pacific》</a>
+    <a href="https://appsto.re/cn/5En1ib.i" style="color:#FFF;">《巅峰海战》</a>
+    <p  style=" font-size:16px; color:#FFF;">还有玄幻，陆战，萌萌哒和猛兽系列的皮肤</p>
+    <p style="color:#FFF;">---------</p>
+    <p  style=" font-size:16px; color:#FFF;">ANDROID</p>
+    <p  style=" font-size:16px; color:#FFF;">请在网页或者各大应用商店收索以下关键字</p>
+    <p  style=" font-size:16px; color:#FFF;">《终极舰队》《超级海战》《巅峰坦克》</p>
+        <p style="color:#FFF;">---------</p>
+    <p  style=" font-size:18px; color:#FFF;"> 塔防类 </p>
+    <p  style=" font-size:16px; color:#FFF;"> 《保卫冰箱》 </p>
+        <p style="color:#FFF;">---------</p>
+    <p  style=" font-size:18px; color:#FFF;"> 跑酷类 </p>
+    <p  style=" font-size:16px; color:#FFF;"> 《炮弹鸟》《超级英雄》 </p>
+        <p style="color:#FFF;">---------</p>
+    <p  style=" font-size:18px; color:#FFF;"> 经营类 </p>
+    <p  style=" font-size:16px; color:#FFF;"> 《Q5》《欢乐手机店》 </p> -->
+    
+    <p style="color:#FFF;">------------------------------------------------------------------</p>
+    <p  style=" font-size:22px; color:#FFF;"> 关于作者 </p>
+    <p style="color:#FFF;">-------------------------------------</p>
+	<p  style=" font-size:19px; color:#FFF;"> 齊葩是一个异想天开的全能大佬</p>
+<p  style=" font-size:19px; color:#FFF;"> 他自认为他有梦想，并且向往自由</p>
+<p  style=" font-size:19px; color:#FFF;"> 他试图通过增加知识来完成梦想，获得自由。后来他秃顶了</p>
+<p  style=" font-size:19px; color:#FFF;"> 现在，变得无比强大的他，已经做好了改变世界的准备</p>
+<p style="color:#FFF;">-------------------------------------</p>
+<p  style=" font-size:19px; color:#FFF;"> 您可以扫描下边的二维码给他捐一点钱，因为它很穷</p>
+<img src="images/support.jpg" width="340" height="425" alt=""/>
+<p style="color:#FFF;">-------------------------------------</p>
+<p  style=" font-size:19px; color:#FFF;"> 下面有他的照片，那时的他还有那么一点秀发 </p>
+  <p style="color:#FFF;">-------------------------------------</p>
+   <img src="images/zp.jpg" width="384" height="512" alt=""/>
+<p style="color:#FFF;">--------------------------------------------------------</p>
+    <p  style=" font-size:20px; color:#FFF;"> 友情链接 </p>
+    <p  style="  color:#FFF;">
+    <a href="http://blog.justbilt.com" style="font-size:19px; color:#FFF;"> justbilt </a>  
+
+    <p style="color:#FFF;">--------------------------------------------------------</p>
+    <p  style=" font-size:20px; color:#FFF;"> 大佬姓名：齐胜明 </p>
+    </p>
   </div>
-
-<script src="src/settings.js" charset="utf-8"></script>
-
-<script src="main.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-(function () {
-    // open web debugger console
-    if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
-    }
-
-    var debug = window._CCSettings.debug;
-    var splash = document.getElementById('splash');
-    splash.style.display = 'block';
-
-    function loadScript (moduleName, cb) {
-      function scriptLoaded () {
-          document.body.removeChild(domScript);
-          domScript.removeEventListener('load', scriptLoaded, false);
-          cb && cb();
-      };
-      var domScript = document.createElement('script');
-      domScript.async = true;
-      domScript.src = moduleName;
-      domScript.addEventListener('load', scriptLoaded, false);
-      document.body.appendChild(domScript);
-    }
-
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js', function () {
-      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
-      }
-      else {
-        window.boot();
-      }
-    });
-})();
-</script>
+</div>
 </body>
 </html>
+<!-- 82992139 -->
